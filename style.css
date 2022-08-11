@@ -4,6 +4,7 @@
 }
 
 body {
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0 auto;
 }
@@ -24,12 +25,29 @@ body {
 
 .header .logo {
   padding-left: 1%;
+  display: flex;
+  justify-content: center;
 }
 
 .header .logo .title {
-  color: black;
-  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
 }
+
+.header .logo .title:hover {
+  color: #025E73;
+  transition-property: color;
+  transition: 750ms;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+i {
+  padding-left: 10px;
+}
+
 
 .header .menu {
   padding-right: 1%;
@@ -41,15 +59,20 @@ body {
 }
 
 .header .menu nav ul li a {
+  font-weight: 700;
+  font-style: italic;
   font-size: 1.5rem;
   text-decoration: none;
   padding: 10px;
-  color: black;
+  color: white;
 }
 
 .header .menu nav ul li a:hover {
   text-decoration: underline;
-  color: red;
+  color: #025E73;
+  transition-property: color;
+  transition: 750ms;
+  transition-duration: 1s;
 }
 
 /* Main */
@@ -77,6 +100,7 @@ body {
   color: white;
   font-size: 2rem;
   font-style: italic;
+  font-weight: 700;
 }
 
 /* Section Cars */
@@ -88,6 +112,8 @@ body {
 }
 
 .section-cars h2 {
+  font-weight: 700;
+  font-style: italic;
   text-align: center;
   color: #f2a71b;
   font-size: 2.5rem;
@@ -108,6 +134,7 @@ body {
   flex-basis: 420px;
   margin: 0.5%;
   padding: 5px;
+  border: 1px solid #f2a71b;
 }
 
 .cars .mercedes {
@@ -158,6 +185,8 @@ body {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 30px;
+  font-weight: 700;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 900px) {
@@ -168,9 +197,10 @@ body {
   .chevrolet,
   .audi {
     opacity: 1;
+    height: 200px;
   }
   .section-cars .cars .card-auto {
-    flex-basis: 350px;
+    flex-basis: 250px;
   }
 }
 
@@ -186,6 +216,8 @@ body {
   padding-top: 70px;
   font-size: 2.5rem;
   color: #f2a71b;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .contact .info {
@@ -206,6 +238,7 @@ body {
 
 .contact .info .email-phone p {
   color: #f2a71b;
+  padding-bottom: 20px;
 }
 
 .contact .info .location {
@@ -228,6 +261,8 @@ body {
 .contact .info .location h3 {
   text-align: center;
   font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
   padding-bottom: 20px;
   color: #f2a71b;
 }
@@ -243,6 +278,8 @@ body {
   margin-bottom: 20px;
   font-size: 2.5rem;
   color:#f2a71b;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .about {
@@ -254,7 +291,6 @@ body {
   opacity: 0.9;
   border: 1px solid #f2a71b;
 }
-
 
 .about .div-about {
   display: flex;
@@ -270,6 +306,7 @@ body {
 
 .about .div-about .text p {
   font-size: 1.3rem;
+  font-weight: 400;
   font-style: italic;
   padding: 3.5%;
   color:#f2a71b;
@@ -300,11 +337,14 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  border: 1px solid #025E73;
 }
 
 .staff .img p {
   color: #f2a71b;
   font-size: 1.2rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
 /* Section footer */
@@ -327,4 +367,11 @@ footer {
   text-decoration: none;
   font-size: 2rem;
   color: black;
+}
+
+.redes ul li a:hover {
+  color: #025E73;
+  transition-property: color;
+  transition: 750ms;
+  transition-duration: 750ms;
 }
